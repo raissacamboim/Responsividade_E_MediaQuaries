@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsividade e Media Queries</title>
+
+    <style>
+
+        .perfil-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border: 4px solid #ffae00;
+            max-width: 300px;
+        }
+
+        .perfil-card img {
+            border-radius: 50%;
+            width: 100px;
+        }
+
+        @media (max-width: 600px) {
+            .perfil-card {
+                width: 100%;
+                max-width: none;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="perfil-card">
+        <img src="Ace/Ace.jpg"
+            alt="Foto de Perfil">
+        <h2>Portgas D. Ace</h2>
+        <p>Personagem de One Piece</p>
+    </div>
+
+</body>
+</html>
